@@ -1,0 +1,10 @@
+Q:
+1. 执行脚本createKB.sql时不能创建同名的模式x500
+2. 执行脚本initKB.sql有部分NOTICE信息
+3. 日期格式0001-00-00 00:00:00
+4. KINGBASE_HOME环境变量没有
+5. 属性ID=32的CONSTRAIN_ID在DSASELF_SONS表中第一条记录为空值,导致影像数据上不去
+6. 一/二级域中都是KB的话，二级域初始化时不成功：父域的PUBLIC_KEY下不来
+
+Q: KingBase(金仓数据库)的service.conf中不能设置多个段
+A: 每个段用两行空格间隔开

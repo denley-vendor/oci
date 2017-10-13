@@ -1,0 +1,10 @@
+1、
+通过操作系统用户修改安装目录下/data/kingbase.conf文件中
+#log_statement=
+为（注意去掉*）
+log_statement=all
+然后重起数据库
+在root用户下
+service klsd restart
+这时数据库的log就会记录在安装目录下的/log/kingbase-*.log（可以通过ls -l查看,最新时间的log即是）
+注意：如果不需要跟踪log时候，请关闭log_statement=all，不然log信息会非常大

@@ -1,0 +1,10 @@
+Q: 创建名录项时, 产生user_id时失败: select dsuseridsequences.nextval from dual返回-1,
+A: 因为dual表的一个字段为VARCHAR类型，应改为INTEGER
+
+Q: DM数据库在不访问时会自动断开
+A: 进入/etc/dm_svc.conf中，增加一项:chk_connect=(0),然后重启使用了DM的应用程序
+
+debug={3}
+show_result={1}
+show_sql={1} dmoci.log
+13296627776
